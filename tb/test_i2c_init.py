@@ -33,7 +33,23 @@ testbench = 'test_%s' % module
 
 srcs = []
 
-srcs.append("../rtl/%s.v" % module)
+# MODIFICATION START
+# Allow DUT RTL file to be specified by an environment variable
+# Default to the original path if the environment variable is not set
+dut_rtl_env_var = "DUT_RTL_FILE_I2C_INIT" # Use a specific variable name
+default_dut_path = os.path.join(os.path.dirname(__file__), "..", "rtl", "%s.v" % module)
+dut_rtl_file = os.environ.get(dut_rtl_env_var, default_dut_path)
+
+if not os.path.exists(dut_rtl_file):
+    print(f"ERROR: DUT RTL file '{dut_rtl_file}' not found.")
+    print(f"Ensure '{dut_rtl_env_var}' is set correctly or the default path is valid.")
+    exit(1)
+
+print(f"Using DUT RTL: {dut_rtl_file}")
+srcs.append(dut_rtl_file)
+# MODIFICATION END
+
+#srcs.append("../rtl/%s.v" % module)
 srcs.append("%s.v" % testbench)
 
 src = ' '.join(srcs)

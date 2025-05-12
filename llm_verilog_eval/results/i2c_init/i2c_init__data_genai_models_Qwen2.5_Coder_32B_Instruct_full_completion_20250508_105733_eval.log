@@ -1,0 +1,27 @@
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v:2: error: Variable declarations must be contained within a module.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v:3: error: Variable declarations must be contained within a module.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v:4: error: Variable declarations must be contained within a module.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v:5: error: Variable declarations must be contained within a module.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v:6: error: Variable declarations must be contained within a module.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v:7: error: Variable declarations must be contained within a module.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v:8: error: Variable declarations must be contained within a module.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v:11: error: localparam declarations must be contained within a module.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v:12: error: localparam declarations must be contained within a module.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v:13: error: localparam declarations must be contained within a module.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v:14: error: localparam declarations must be contained within a module.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v:15: error: localparam declarations must be contained within a module.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v:16: error: localparam declarations must be contained within a module.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v:17: error: localparam declarations must be contained within a module.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v:20: syntax error
+I give up.
+Using DUT RTL: /data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105733.v
+Running test...
+Traceback (most recent call last):
+  File "/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_i2c_init.py", line 280, in <module>
+    test_bench()
+  File "/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_i2c_init.py", line 275, in test_bench
+    sim = Simulation(bench())
+                     ^^^^^^^
+  File "/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_i2c_init.py", line 117, in bench
+    raise Exception("Error running build command")
+Exception: Error running build command

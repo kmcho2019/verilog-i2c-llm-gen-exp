@@ -1,0 +1,14 @@
+VCD info: dumpfile test_simple_and.lxt opened for output.
+MyHDL Test for 'simple_and': Using DUT RTL file: /data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/simple_and/simple_and__data_genai_models_Qwen2.5_Coder_7B_partial_completion_20250512_233520.v
+MyHDL Test: Build command: iverilog -o test_simple_and.vvp "/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/simple_and/simple_and__data_genai_models_Qwen2.5_Coder_7B_partial_completion_20250512_233520.v" "/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_simple_and.v"
+--- Running MyHDL Testbench: test_simple_and.py ---
+MyHDL Test: Compiling Verilog sources...
+MyHDL Test: Verilog compilation successful.
+MyHDL Test: Starting Cosimulation with 'vvp -m myhdl test_simple_and.vvp'
+MyHDL Test: Stimulus started.
+MyHDL Test: Inputs a=0, b=0. DUT y=0. Expected y=0.
+MyHDL Test: Inputs a=0, b=1. DUT y=0. Expected y=0.
+MyHDL Test: Inputs a=1, b=0. DUT y=0. Expected y=0.
+MyHDL Test: Inputs a=1, b=1. DUT y=1. Expected y=1.
+MyHDL Test: All test vectors PASSED successfully!
+--- MyHDL Testbench: test_simple_and.py COMPLETED SUCCESSFULLY ---

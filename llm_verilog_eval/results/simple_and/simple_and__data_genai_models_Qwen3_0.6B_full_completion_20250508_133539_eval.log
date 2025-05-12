@@ -1,0 +1,18 @@
+/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_simple_and.v:2: error: timescale directive cannot be inside a module definition.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_simple_and.v:4: error: Module definition test_simple_and cannot nest into module simple_and.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_simple_and.v:37: syntax error
+I give up.
+MyHDL Test for 'simple_and': Using DUT RTL file: /data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/simple_and/simple_and__data_genai_models_Qwen3_0.6B_full_completion_20250508_133539.v
+MyHDL Test: Build command: iverilog -o test_simple_and.vvp "/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/simple_and/simple_and__data_genai_models_Qwen3_0.6B_full_completion_20250508_133539.v" "/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_simple_and.v"
+--- Running MyHDL Testbench: test_simple_and.py ---
+MyHDL Test: Compiling Verilog sources...
+MyHDL Test: FATAL - Verilog compilation failed with status 1024. Command was: iverilog -o test_simple_and.vvp "/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/simple_and/simple_and__data_genai_models_Qwen3_0.6B_full_completion_20250508_133539.v" "/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_simple_and.v"
+--- MyHDL Testbench: test_simple_and.py FAILED ---
+Error: Verilog compilation error
+Traceback (most recent call last):
+  File "/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_simple_and.py", line 131, in <module>
+    sim = Simulation(simple_and_myhdl_tb())
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_simple_and.py", line 69, in simple_and_myhdl_tb
+    raise Exception("Verilog compilation error")
+Exception: Verilog compilation error

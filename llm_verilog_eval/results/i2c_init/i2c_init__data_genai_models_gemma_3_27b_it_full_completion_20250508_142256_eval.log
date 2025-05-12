@@ -1,0 +1,13 @@
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_142256.v:1: syntax error
+I give up.
+Using DUT RTL: /data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_142256.v
+Running test...
+Traceback (most recent call last):
+  File "/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_i2c_init.py", line 280, in <module>
+    test_bench()
+  File "/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_i2c_init.py", line 275, in test_bench
+    sim = Simulation(bench())
+                     ^^^^^^^
+  File "/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_i2c_init.py", line 117, in bench
+    raise Exception("Error running build command")
+Exception: Error running build command

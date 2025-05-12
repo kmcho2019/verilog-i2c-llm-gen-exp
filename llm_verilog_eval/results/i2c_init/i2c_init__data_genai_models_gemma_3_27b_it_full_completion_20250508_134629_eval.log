@@ -1,0 +1,54 @@
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:139: syntax error
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:138: error: Invalid module instantiation
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:336: error: Invalid module instantiation
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:336: error: Invalid module instantiation
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:336: error: Invalid module instantiation
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:336: error: Invalid module instantiation
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:337: error: Invalid module instantiation
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:337: error: Invalid module instantiation
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:337: syntax error
+test_i2c_init.v:27: error: timescale directive cannot be inside a module definition.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:337: error: Invalid module instantiation
+test_i2c_init.v:37: error: 'clk' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:6:      : It was declared here as a net.
+test_i2c_init.v:38: error: 'rst' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:7:      : It was declared here as a net.
+test_i2c_init.v:41: error: 'm_axis_cmd_ready' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:19:      : It was declared here as a net.
+test_i2c_init.v:42: error: 'm_axis_data_tready' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:23:      : It was declared here as a net.
+test_i2c_init.v:43: error: 'start' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:34:      : It was declared here as a net.
+test_i2c_init.v:46: error: 'm_axis_cmd_address' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:12:      : It was declared here as a net.
+test_i2c_init.v:47: error: 'm_axis_cmd_start' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:13:      : It was declared here as a net.
+test_i2c_init.v:48: error: 'm_axis_cmd_read' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:14:      : It was declared here as a net.
+test_i2c_init.v:49: error: 'm_axis_cmd_write' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:15:      : It was declared here as a net.
+test_i2c_init.v:50: error: 'm_axis_cmd_write_multiple' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:16:      : It was declared here as a net.
+test_i2c_init.v:51: error: 'm_axis_cmd_stop' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:17:      : It was declared here as a net.
+test_i2c_init.v:52: error: 'm_axis_cmd_valid' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:18:      : It was declared here as a net.
+test_i2c_init.v:53: error: 'm_axis_data_tdata' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:21:      : It was declared here as a net.
+test_i2c_init.v:54: error: 'm_axis_data_tvalid' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:22:      : It was declared here as a net.
+test_i2c_init.v:55: error: 'm_axis_data_tlast' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:24:      : It was declared here as a net.
+test_i2c_init.v:56: error: 'busy' has already been declared in this scope.
+/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v:29:      : It was declared here as a net.
+Using DUT RTL: /data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/i2c_init/i2c_init__data_genai_models_gemma_3_27b_it_full_completion_20250508_134629.v
+Running test...
+Traceback (most recent call last):
+  File "/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_i2c_init.py", line 280, in <module>
+    test_bench()
+  File "/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_i2c_init.py", line 275, in test_bench
+    sim = Simulation(bench())
+                     ^^^^^^^
+  File "/data/genai/kmcho/llm_generation_test/verilog-i2c/tb/test_i2c_init.py", line 117, in bench
+    raise Exception("Error running build command")
+Exception: Error running build command

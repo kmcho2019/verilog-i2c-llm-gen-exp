@@ -1,0 +1,2 @@
+ERROR: Environment variable '/data/genai/kmcho/llm_generation_test/verilog-i2c/llm_verilog_eval/generated_rtl/simple_and/simple_and__data_genai_models_Qwen2.5_Coder_32B_Instruct_full_completion_20250508_105539.v' (for DUT RTL file) is not set.
+       This script should be called by 'evaluate_rtl.sh' which sets this variable.

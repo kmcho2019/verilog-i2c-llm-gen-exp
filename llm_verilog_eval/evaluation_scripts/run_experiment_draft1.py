@@ -31,9 +31,9 @@ MODULE_NAME = "simple_and"
 TESTBENCH_SCRIPT_NAME = "test_simple_and.py"    # To be passed to evaluate_rtl.sh
 DUT_ENV_VAR_NAME = "DUT_RTL_FILE_SIMPLE_AND" # To be passed to evaluate_rtl.sh and used by test_simple_and.py
 
-# MODULE_NAME = "i2c_init"
-# TESTBENCH_SCRIPT_NAME = "test_i2c_init.py"    # To be passed to evaluate_rtl.sh
-# DUT_ENV_VAR_NAME = "DUT_RTL_FILE_I2C_INIT" # To be passed to evaluate_rtl.sh and used by test_simple_and.py
+MODULE_NAME = "i2c_init"
+TESTBENCH_SCRIPT_NAME = "test_i2c_init.py"    # To be passed to evaluate_rtl.sh
+DUT_ENV_VAR_NAME = "DUT_RTL_FILE_I2C_INIT" # To be passed to evaluate_rtl.sh and used by test_simple_and.py
 
 # Module-specific settings (these will be used based on MODULE_NAME)
 MODULE_CONFIGS = {
@@ -41,14 +41,24 @@ MODULE_CONFIGS = {
         "testbench_script": "test_simple_and.py",
         "dut_env_var": "DUT_RTL_FILE_SIMPLE_AND",
         "reference_rtl_filename": "simple_and.v", # For partial completion
-        "num_lines_to_mask": 10, # Mask the single 'assign' line
+        "partial_completion_params": { # New section for partial completion details
+            "num_lines_to_mask": 1, # Mask the single 'assign' line
+            "mask_after_line": 8, # 1-index mask only after this line number
+            "mask_start_line": None, # 1-index mask starting at this line number (inclusive)
+            "mask_end_line": None, # 1-index mask stop at this line number (inclusive)
+        }
     },
     "i2c_init": {
         "testbench_script": "test_i2c_init.py",
         # Ensure your test_i2c_init.py uses this exact env var name if you changed it
         "dut_env_var": "DUT_RTL_FILE_I2C_INIT", 
         "reference_rtl_filename": "i2c_init.v", # Assumes this exists in PROJECT_ROOT/rtl/
-        "num_lines_to_mask": 5, # Example, adjust as needed
+        "partial_completion_params": { # New section for partial completion details
+            "num_lines_to_mask": 2, # Example, adjust as needed
+            "mask_after_line": 140, # 1-index mask only after this line number
+            "mask_start_line": None, # 1-index mask starting at this line number (inclusive)
+            "mask_end_line": None, # 1-index mask stop at this line number (inclusive)
+        }
     }
 }
 
@@ -60,8 +70,13 @@ CURRENT_MODULE_CONFIG = MODULE_CONFIGS[MODULE_NAME]
 TESTBENCH_SCRIPT_NAME = CURRENT_MODULE_CONFIG["testbench_script"]
 DUT_ENV_VAR_NAME = CURRENT_MODULE_CONFIG["dut_env_var"]
 REFERENCE_RTL_FILENAME = CURRENT_MODULE_CONFIG.get("reference_rtl_filename") # Might not exist for all modules if only doing full_completion
-NUM_LINES_TO_MASK = CURRENT_MODULE_CONFIG.get("num_lines_to_mask", 0)
-
+# NUM_LINES_TO_MASK = CURRENT_MODULE_CONFIG.get("num_lines_to_mask", 0)
+# Get partial completion params safely
+PARTIAL_COMPLETION_PARAMS = CURRENT_MODULE_CONFIG.get("partial_completion_params", {})
+NUM_LINES_TO_MASK = PARTIAL_COMPLETION_PARAMS.get("num_lines_to_mask", 0)
+MASK_AFTER_LINE = PARTIAL_COMPLETION_PARAMS.get("mask_after_line")
+MASK_START_LINE = PARTIAL_COMPLETION_PARAMS.get("mask_start_line")
+MASK_END_LINE = PARTIAL_COMPLETION_PARAMS.get("mask_end_line")
 
 # ====================================
 
@@ -166,13 +181,19 @@ def main():
         masked_rtl_filepath = os.path.join(prompts_module_dir, masked_rtl_filename)
 
         print(f"Masking {NUM_LINES_TO_MASK} line(s) in {reference_rtl_path} (seed: {seed_for_masking})...")
+        print(f"  Mode: num_lines={NUM_LINES_TO_MASK}, after_line={MASK_AFTER_LINE}, "
+              f"start_line={MASK_START_LINE}, end_line={MASK_END_LINE}")
+
         if not mask_verilog_lines(
             reference_rtl_path, 
             masked_rtl_filepath, 
             num_lines_to_mask=NUM_LINES_TO_MASK, 
             mask_token=DEFAULT_MASK_TOKEN, 
             seed=seed_for_masking,
-            module_name_for_ref=MODULE_NAME
+            module_name_for_ref=MODULE_NAME,
+            mask_after_line=MASK_AFTER_LINE,
+            mask_start_line=MASK_START_LINE,
+            mask_end_line=MASK_END_LINE
         ):
             print(f"Error: Failed to create masked Verilog file at {masked_rtl_filepath}")
             sys.exit(1)

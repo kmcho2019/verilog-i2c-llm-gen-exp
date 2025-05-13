@@ -49,7 +49,7 @@ def load_model_and_tokenizer(model_name_or_path, use_quantization=None):
     _tokenizer_cache[model_name_or_path] = tokenizer
     return model, tokenizer
 
-def generate_verilog(model, tokenizer, prompt_text, max_new_tokens=2048, temperature=0.2):
+def generate_verilog(model, tokenizer, prompt_text, max_new_tokens=8192, temperature=0.7):
     """
     Generates Verilog code using the provided model, tokenizer, and prompt.
 

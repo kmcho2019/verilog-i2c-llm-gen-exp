@@ -116,6 +116,9 @@ def mask_verilog_lines(
            low_stripped_line.startswith("input ") or \
            low_stripped_line.startswith("output ") or \
            low_stripped_line.startswith("inout ") or \
+           low_stripped_line.startswith("always") or \
+           low_stripped_line.startswith("begin ") or \
+           low_stripped_line.startswith("end ") or \
            low_stripped_line.startswith("initial"):
             continue
         candidate_indices.append(i) # Store the 0-based index
